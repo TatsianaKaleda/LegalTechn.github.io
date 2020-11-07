@@ -14,26 +14,27 @@ const rename = require("gulp-rename");
 const imageMin = require('gulp-imagemin');
 const rigger = require('gulp-rigger');
 const minify = require('gulp-minify');
+const concat = require('gulp-concat');;
 const reload = browserSync.reload;
 
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
-        js: ['build/js/', "./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js"],
+        js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'src/modules/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
+        js: 'src/js/main.js', //В стилях и скриптах нам понадобятся только main файлы
         css: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
-        js: 'src/modules/**/*.js',
+        js: 'src/js/*.js',
         css: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -87,11 +88,12 @@ const css = () => {
 
 const js = () => {
     return gulp
-        .src(path.src.js)
+        .src(['./node_modules/jquery/dist/jquery.js', './node_modules/bootstrap/dist/js/bootstrap.js', path.src.js])
         .pipe(rigger())
         .pipe(minify())
+        .pipe(concat('main.js'))
         .pipe(reload({stream: true}))
-        .pipe(gulp.dest(path.build.img))
+        .pipe(gulp.dest(path.build.js))
 };
 
 const img = () => {

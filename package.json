@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
+    "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-minify": "^3.1.0",
