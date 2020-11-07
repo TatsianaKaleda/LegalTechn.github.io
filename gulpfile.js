@@ -13,13 +13,13 @@ const rimraf = require('rimraf');
 const rename = require("gulp-rename");
 const imageMin = require('gulp-imagemin');
 const rigger = require('gulp-rigger');
-const uglify = require('gulp-uglify');
+const minify = require('gulp-minify');
 const reload = browserSync.reload;
 
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'build/',
-        js: 'build/js/',
+        js: ['build/js/', "./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js"],
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/'
@@ -32,7 +32,7 @@ const path = {
         fonts: 'src/fonts/**/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
-        html: 'src/index.html',
+        html: 'src/**/*.html',
         js: 'src/modules/**/*.js',
         css: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
@@ -45,7 +45,7 @@ const config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+
     host: 'localhost',
     port: 9000,
     logPrefix: "Legal_tech"
@@ -87,9 +87,9 @@ const css = () => {
 
 const js = () => {
     return gulp
-        .src(path.src.img)
+        .src(path.src.js)
         .pipe(rigger())
-        .pipe(uglify())
+        .pipe(minify())
         .pipe(reload({stream: true}))
         .pipe(gulp.dest(path.build.img))
 };
@@ -109,7 +109,7 @@ const font = () => {
         .pipe(gulp.dest(path.build.fonts))
 };
 
-gulp.task('build', gulp.parallel(html, css, js, img, font));
+gulp.task('build', gulp.series(gulp.parallel(html, css, img, font), js));
 
 gulp.task('watch', function() {
     gulp.watch(path.watch.html, html);
@@ -127,4 +127,4 @@ gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
-gulp.task('default', gulp.parallel('clean', 'build', 'webServer', 'watch'));
+gulp.task('default', gulp.parallel('build', 'webServer', 'watch'));
