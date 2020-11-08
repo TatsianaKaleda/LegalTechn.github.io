@@ -1,0 +1,79 @@
+.promo {
+  & .window-text {
+    width: 570px;
+    height: 100px;
+    text-align: left;
+
+    &.carousel-caption {
+      bottom: 350px;
+      left: 7%;
+
+      & .main-name {
+        margin-bottom: 20px;
+        font-family: Commissioner;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.01em;
+        color: rgba(0, 0, 0, 0.9);
+      }
+
+      & .subname {
+        margin-bottom: 50px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+      & .btn {
+        width: 200px;
+        height: 45px;
+        font-family: Commissioner;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #DEC377;
+        border: none;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  & .carousel-control-next,
+  & .carousel-control-prev {
+    color: rgba(0, 0, 0, 0.8);
+    width: 5%;
+  }
+
+  & .carousel-control-prev {
+    position: absolute;
+    bottom: 0;
+    left: 95px;
+    width: 120px;
+
+    & .carousel-control-prev-icon {
+      position: absolute;
+      bottom: 121px;
+      background-image: url("../img/prev.png");
+    }
+  }
+
+  & .carousel-control-next {
+    left: 220px;
+    top: 387px;
+
+    & .carousel-control-next-icon {
+      background-image: url("../img/next.png");
+    }
+  }
+}

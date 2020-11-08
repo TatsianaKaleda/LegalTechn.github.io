@@ -1,0 +1,52 @@
+.partners {
+  margin-bottom: 100px;
+
+  &-container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-about {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      & p {
+        margin-right: 100px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+
+      & button {
+        font-family: Commissioner;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #DEC377;
+        border: 1px solid #DEC377;
+        background: #ffffff;
+      }
+    }
+
+    &-icon {
+      mix-blend-mode: luminosity;
+
+      & img {
+        margin-right: 60px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -60,8 +60,8 @@ const html = () => {
             basepath: '@file'
         }))
         .pipe(htmlValidator())
-        .pipe(reload({stream: true}))
         .pipe(gulp.dest(path.build.html))
+        .pipe(reload({stream: true}))
 };
 
 const css = () => {
@@ -82,33 +82,38 @@ const css = () => {
         }))
         .pipe(sourcemaps.write())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(reload({stream: true}))
         .pipe(gulp.dest(path.build.css))
+        .pipe(reload({stream: true}))
 };
 
 const js = () => {
     return gulp
-        .src(['./node_modules/jquery/dist/jquery.js', './node_modules/bootstrap/dist/js/bootstrap.js', path.src.js])
+        .src(['./node_modules/jquery/dist/jquery.js',
+            './node_modules/bootstrap/dist/js/bootstrap.js',
+            './node_modules/slick-carousel/slick/slick.js',
+            path.src.js])
         .pipe(rigger())
+        .pipe(sourcemaps.init())
         .pipe(minify())
         .pipe(concat('main.js'))
-        .pipe(reload({stream: true}))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.js))
+        .pipe(reload({stream: true}))
 };
 
 const img = () => {
     return gulp
         .src(path.src.img)
         .pipe(imageMin())
-        .pipe(reload({stream: true}))
         .pipe(gulp.dest(path.build.img))
+        .pipe(reload({stream: true}))
 };
 
 const font = () => {
     return gulp
         .src(path.src.fonts)
-        .pipe(reload({stream: true}))
         .pipe(gulp.dest(path.build.fonts))
+        .pipe(reload({stream: true}))
 };
 
 gulp.task('build', gulp.series(gulp.parallel(html, css, img, font), js));

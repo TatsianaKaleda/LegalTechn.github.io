@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 33px;
+
+  & .language {
+    & .name {
+      display: inline-block;
+      margin-right: 13px;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    & .select {
+      display: inline-block;
+      margin-right: 8px;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    & img {
+      width: 9px;
+      height: 5px;
+    }
+  }
+
+  & .icon-eyes img {
+    width: 32px;
+    height: 32px;
+  }
+
+  & .telephone {
+    & p {
+      display: inline-block;
+      margin-right: 15px;
+      font-family: Commissioner;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.5);
+
+      &.main-phone {
+        font-size: 14px;
+      }
+
+      &.second-phone {
+        font-size: 12px;
+      }
+    }
+
+    & img {
+      margin-right: 12px;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 22px;
+
+  & .nav a {
+    margin-right: 50px;
+    padding: 0;
+    font-family: Commissioner;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

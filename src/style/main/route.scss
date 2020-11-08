@@ -1,0 +1,145 @@
+/*ROUTE*/
+.route {
+  margin: 0 auto 100px;
+  background: #E5E5E5;
+
+  & .container-route {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+
+    &-table {
+      margin-bottom: 100px;
+
+      & h2 {
+        margin-bottom: 5px;
+        font-family: Commissioner;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+        text-align: left;
+      }
+
+      & .route-cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+
+        & .route-card {
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 15px 25px 40px;
+          margin: 30px 30px 0 0;
+          width: 370px;
+          height: 140px;
+          background: #FFFFFF;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+
+          &-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 25px;
+          }
+
+          &-name {
+            flex: 0 0 100%;
+            margin: 10px 0 0;
+            font-family: Commissioner;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.9)
+          }
+
+          & .route-card-img-border {
+            display: flex;
+            flex: 0 0 80px;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            border-radius: 50%;
+          }
+
+          &-btn {
+            align-self: flex-end;
+            padding: 0;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+            border: none;
+            background: none;
+          }
+        }
+      }
+    }
+
+    &-about {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+
+      & h2 {
+        flex: 0 0 40%;
+        padding-right: 30px;
+        font-family: Commissioner;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        color: rgba(0, 0, 0, 0.9);
+      }
+
+      &-text {
+        flex: 0 0 60%;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    &-slider {
+      /*    margin-bottom: 100px;*/
+
+      & .carousel-control-next {
+      /*    right: -59px;*/
+
+        &-icon {
+          background-image: url("../img/chevron-right.png");
+        }
+      }
+
+      & .carousel-control-prev {
+      /*    position: absolute;*/
+      /*    bottom: 237px;*/
+      /*    left: -190px;*/
+
+        &-icon {
+          /*position: absolute;*/
+          /*bottom: 237px;*/
+          /*left: -190px;*/
+          background-image: url("../img/chevron-left.png");
+        }
+      }
+    }
+  }
+}

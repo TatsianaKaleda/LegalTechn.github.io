@@ -1,4 +1,4 @@
-$('.multiple-items').slick({
+$('.multiple-items').not('.slick-initialized').slick({
     dots: true,
     infinite: true,
     slidesToShow: 2
