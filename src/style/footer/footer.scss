@@ -11,7 +11,7 @@
 
     &-info {
       margin-right: 30px;
-      width: 28%;
+      width: calc(31% - 30px);
 
       &-title {
         margin-bottom: 70px;
@@ -97,7 +97,7 @@
 
     &-office {
       margin-right: 30px;
-      width: 54%;
+      width: calc(54% - 30px);
 
       &-title {
         padding-top: 26px;
@@ -116,9 +116,13 @@
         padding-top: 29px;
         display: flex;
 
-        &-minsk {
+        &-minsk,
+        &-department {
           padding-right: 30px;
-          flex: 0 0 calc(40% - 30px);
+        }
+
+        &-minsk {
+          flex: 0 0 calc(38% - 30px);
 
           &-title {
             margin-bottom: 20px;
@@ -156,7 +160,6 @@
           }
 
           &-email {
-
             & .email {
               font-family: Commissioner;
               font-style: normal;
@@ -169,16 +172,13 @@
         }
 
         &-department {
-          flex: 0 0 calc(60% - 30px);
-          padding-right: 30px;
-
           &-point {
             display: flex;
             flex-wrap: wrap;
 
             &-city:nth-child(odd) {
-              flex: 0 0 calc(50% - 30px);
-              padding-right: 35px;
+              flex: 0 0 calc(57% - 30px);
+              padding-right: 30px;
             }
 
             &-city {
