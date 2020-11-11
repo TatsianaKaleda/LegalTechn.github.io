@@ -6,7 +6,7 @@
 
     &.carousel-caption {
       bottom: 350px;
-      left: 7%;
+      left: calc((100vw - 1170px - 16px) / 2);
 
       & .main-name {
         margin-bottom: 20px;
@@ -37,25 +37,37 @@
     width: 5%;
   }
 
-  & .carousel-control-prev {
+  & .carousel-control-prev,
+  & .carousel-control-next {
     position: absolute;
-    bottom: 0;
-    left: 95px;
-    width: 120px;
+    width: 60px;
+    height: 60px;
+  }
 
-    & .carousel-control-prev-icon {
-      position: absolute;
-      bottom: 121px;
-      background-image: url("../img/prev.png");
+  & .carousel-control-prev,
+  & .carousel-control-next {
+    top: calc(100% - 130px);
+
+    &-icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & .carousel-control-prev {
+    left: calc((100vw - 1170px - 16px) / 2);
+
+    &-icon {
+      background: url("../img/next.svg") center no-repeat;
+      transform: rotate(180deg);
     }
   }
 
   & .carousel-control-next {
-    left: 220px;
-    top: 387px;
+    left: calc(((100vw - 1170px - 16px) / 2) + 60px);
 
-    & .carousel-control-next-icon {
-      background-image: url("../img/next.png");
+    &-icon {
+      background-image: url("../img/next.png") center no-repeat;
     }
   }
 }

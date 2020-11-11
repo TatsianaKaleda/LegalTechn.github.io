@@ -1,7 +1,9 @@
 .header {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 33px;
+  justify-content: space-between;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto 33px;
 
   & .language {
     & .name {
@@ -67,8 +69,10 @@
 
 .navigation {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 22px;
+  justify-content: space-between;
+  margin: 0 auto 22px;
+  max-width: 1170px;
+  width: 100%;
 
   & .nav a {
     margin-right: 50px;
