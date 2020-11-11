@@ -94,7 +94,6 @@ const js = () => {
             path.src.js])
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(minify())
         .pipe(concat('main.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.js))
@@ -134,4 +133,4 @@ gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
-gulp.task('default', gulp.parallel('build', 'webServer', 'watch'));
+gulp.task('default', gulp.series('clean', 'build', gulp.parallel('webServer', 'watch')));

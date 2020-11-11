@@ -1,5 +1,4 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
-@import "/node_modules/reset-css/reset.css";
 @import "/node_modules/slick-carousel/slick/slick.css";
 @import "/node_modules/slick-carousel/slick/slick-theme.css";
 @import "./header/header.scss";
@@ -9,7 +8,32 @@
 @import "./main/reviews.scss";
 @import "./main/partners.scss";
 @import "./main/about.scss";
+@import "./main/service.scss";
+@import "./main/trust.scss";
+@import "./main/advantage.scss";
+@import "./main/cooperation.scss";
+@import "./main/cost.scss";
+@import "./footer/footer.scss";
+@import "/node_modules/reset-css/reset.css";
 
 body {
-  margin-bottom: 20rem;
+  overflow-x: hidden;
+}
+
+.btn {
+  width: 200px;
+  height: 45px;
+  font-family: Commissioner;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #DEC377;
+  border: none;
+  border-radius: 2px;
 }

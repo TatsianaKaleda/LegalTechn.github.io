@@ -1,0 +1,302 @@
+.footer {
+  background: #E5E5E5;
+  padding-bottom: 60px;
+
+  &-container {
+    max-width: 1170px;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 49px;
+    display: flex;
+
+    &-info {
+      margin-right: 30px;
+      width: 28%;
+
+      &-title {
+        margin-bottom: 70px;
+        font-family: Commissioner;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.9);
+      }
+
+      &-about {
+
+        &-unp {
+          margin-bottom: 10px;
+        }
+
+        &-unp,
+        &-rating {
+          & .name {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 0;
+            font-family: Commissioner;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.01em;
+            color: rgba(0, 0, 0, 0.5);
+          }
+
+          & .description {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+
+        &-rating {
+          margin-bottom: 61px;
+        }
+      }
+
+      &-network {
+        margin-bottom: 52px;
+
+        & img {
+          margin-right: 19px;
+          width: 27px;
+          height: 27px;
+        }
+      }
+
+      &-website {
+
+        &-map,
+        &-politic {
+
+          & .name {
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 15px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.75);
+          }
+
+          & .arrow {
+            color: rgba(0, 0, 0, 0.75);
+          }
+        }
+      }
+    }
+
+    &-office {
+      margin-right: 30px;
+      width: 54%;
+
+      &-title {
+        padding-top: 26px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        opacity: 0.7;
+      }
+
+      &-contact {
+        padding-top: 29px;
+        display: flex;
+
+        &-minsk {
+          padding-right: 30px;
+          flex: 0 0 calc(40% - 30px);
+
+          &-title {
+            margin-bottom: 20px;
+          }
+
+          &-telephone,
+          &-address,
+          &-communication {
+            margin-bottom: 20px;
+
+            & .detail {
+              margin-bottom: 0;
+              font-family: Lato;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 13px;
+              line-height: 20px;
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+
+          &-address,
+          &-communication {
+
+            & .subtitle {
+              margin-bottom: 5px;
+              font-family: Commissioner;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 20px;
+              letter-spacing: 0.01em;
+              color: rgba(0, 0, 0, 0.75);
+            }
+          }
+
+          &-email {
+
+            & .email {
+              font-family: Commissioner;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 13px;
+              line-height: 20px;
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+
+        &-department {
+          flex: 0 0 calc(60% - 30px);
+          padding-right: 30px;
+
+          &-point {
+            display: flex;
+            flex-wrap: wrap;
+
+            &-city:nth-child(odd) {
+              flex: 0 0 calc(50% - 30px);
+              padding-right: 35px;
+            }
+
+            &-city {
+              flex: 0 0 50%;
+              margin-bottom: 35px;
+
+              & .title {
+                margin-bottom: 10px;
+                font-family: Commissioner;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.75);
+              }
+
+              & .name {
+                margin-bottom: 5px;
+                font-family: Commissioner;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+                letter-spacing: 0.01em;
+                color: rgba(0, 0, 0, 0.75);
+              }
+
+              & .detail {
+                margin-bottom: 5px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 20px;
+                color: rgba(0, 0, 0, 0.8);
+              }
+
+              & .email {
+                margin-bottom: 0;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 20px;
+                color: rgba(0, 0, 0, 0.8);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-time {
+      width: 14%;
+
+      &-title {
+        margin-bottom: 29px;
+        padding-top: 28px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &-visitors,
+      &-call,
+      &-online {
+        margin-bottom: 30px;
+
+        & .subtitle {
+          margin-bottom: 5px;
+          font-family: Commissioner;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 0.01em;
+          color: rgba(0, 0, 0, 0.75);
+        }
+
+        & .detail {
+          margin-bottom: 0;
+          font-family: Commissioner;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 0.01em;
+          color: rgba(0, 0, 0, 0.75);
+        }
+      }
+    }
+  }
+}
+
+.cooperating {
+  background: rgba(0, 0, 0, 0.1);
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+  &-text {
+    max-width: 1170px;
+    width: 1170px;
+    margin: 0 auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+}

@@ -10,8 +10,11 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 40px;
+      max-width: 970px;
+      width: 100%;
 
       & p {
+        flex: 0 0 calc(100% - 300px);
         margin-right: 100px;
         font-family: Lato;
         font-style: normal;
@@ -22,6 +25,9 @@
       }
 
       & button {
+        flex: 0 0 200px;
+        width: 200px;
+        height: 45px;
         font-family: Commissioner;
         font-style: normal;
         font-weight: bold;

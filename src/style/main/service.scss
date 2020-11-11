@@ -1,0 +1,139 @@
+.service {
+  background: #E5E5E5;
+  padding: 50px 0 50px;
+
+  &-container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+    & h2 {
+      margin-top: 60px;
+      font-family: Commissioner;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: 0.03em;
+      color: rgba(0, 0, 0, 0.9);
+    }
+
+    &-cards {
+      margin-bottom: 50px;
+
+      & .service-card {
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(4n + 1) {
+          & .card {
+            background: rgba(222, 195, 119, 0.4);
+          }
+
+          & .service-card-left {
+            flex: 0 0 calc(40% - 15px);
+            width: calc(40% - 15px);
+          }
+
+          & .service-card-right {
+            flex: 0 0 calc(60% - 15px);
+            width: calc(60% - 15px);
+          }
+        }
+
+        &:nth-child(even) {
+          & .card {
+            background: rgba(222, 195, 119, 0.75);
+          }
+
+          & .service-card-left,
+          & .service-card-right {
+            flex: 0 0 calc(50% - 15px);
+            width: calc(50% - 15px);
+          }
+        }
+
+        &:nth-child(4n - 1) {
+          & .card {
+            background: #DEC377;
+          }
+
+          & .service-card-left {
+            flex: 0 0 calc(60% - 15px);
+            width: calc(60% - 15px);
+          }
+
+          & .service-card-right {
+            flex: 0 0 calc(40% - 15px);
+            width: calc(40% - 15px);
+          }
+        }
+
+        & .card {
+          margin-bottom: 30px;
+          max-height: 140px;
+          height: 140px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+          & .service-card-text {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 70px;
+            padding: 25px 20px 20px 30px;
+            height: 100%;
+            background: #FFFFFF;
+
+            &-name {
+              flex: 0 0 100%;
+              align-self: self-start;
+              margin: 0;
+              font-family: Commissioner;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 30px;
+              color: rgba(0, 0, 0, 0.9);
+            }
+
+            &-btn {
+              text-align: right;
+              flex: auto;
+              align-self: flex-end;
+              font-family: Lato;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 20px;
+              letter-spacing: 0.02em;
+              text-transform: uppercase;
+              color: rgba(0, 0, 0, 0.5);
+              background: white;
+              border: none;
+            }
+          }
+        }
+
+        & .service-card-left {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &-about {
+      display: flex;
+      justify-content: space-between;
+
+      & p {
+        margin-right: 25px;
+        max-width: 770px;
+        width: 100%;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}

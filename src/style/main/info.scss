@@ -2,26 +2,31 @@
   background: #E5E5E5;
   padding-bottom: 100px;
 
-  & .advantages {
+  &-positive {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto 100px;
     display: flex;
-    justify-content: center;
+    //justify-content: center;
 
-    & .card {
-      width: 270px;
-      height: 285px;
+    &-card:not(:last-child) {
       margin-right: 30px;
+    }
+
+    &-card {
+      flex: 0 0 calc(25% - 23px);
+      width: calc(25% - 23px);
       z-index: 888;
       margin-top: -70px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 
-      & .card-img {
+      &-img {
         margin: 40px 20px 25px;
-        width: 230px;
       }
 
-      & .card-name {
+      &-name {
+        margin: 0 20px 40px;
         font-family: Lato;
         font-style: normal;
         font-weight: normal;
