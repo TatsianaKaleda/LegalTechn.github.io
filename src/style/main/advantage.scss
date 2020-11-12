@@ -9,7 +9,7 @@
 
     &-title {
       padding: 80px 0 35px;
-      font-family: Commissioner;
+      font-family: 'Commissioner', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 28px;
@@ -39,7 +39,7 @@
 
         &-name {
           margin: 0 20px 40px;
-          font-family: Lato;
+          font-family: 'Lato', sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -56,11 +56,11 @@
       position: relative;
       padding: 40px 370px 45px 50px;
       background: #FFFFFF;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
       &-text {
         margin: 0;
-        font-family: Lato;
+        font-family: 'Lato', sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 15px;

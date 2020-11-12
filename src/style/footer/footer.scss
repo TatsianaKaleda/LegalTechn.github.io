@@ -15,7 +15,7 @@
 
       &-title {
         margin-bottom: 70px;
-        font-family: Commissioner;
+        font-family: 'Commissioner', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -35,7 +35,7 @@
             display: inline-block;
             margin-right: 15px;
             margin-bottom: 0;
-            font-family: Commissioner;
+            font-family: 'Commissioner', sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 13px;
@@ -45,7 +45,7 @@
           }
 
           & .description {
-            font-family: Lato;
+            font-family: 'Lato', sans-serif;
             font-style: normal;
             font-weight: 300;
             font-size: 13px;
@@ -78,7 +78,7 @@
             display: inline-block;
             margin-bottom: 0;
             margin-right: 15px;
-            font-family: Lato;
+            font-family: 'Lato', sans-serif;
             font-style: normal;
             font-weight: 600;
             font-size: 12px;
@@ -102,7 +102,7 @@
       &-title {
         padding-top: 26px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        font-family: Lato;
+        font-family: 'Lato', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -126,6 +126,14 @@
 
           &-title {
             margin-bottom: 20px;
+            font-family: 'Commissioner', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.75);
           }
 
           &-telephone,
@@ -135,7 +143,7 @@
 
             & .detail {
               margin-bottom: 0;
-              font-family: Lato;
+              font-family: 'Lato', sans-serif;
               font-style: normal;
               font-weight: 300;
               font-size: 13px;
@@ -149,7 +157,7 @@
 
             & .subtitle {
               margin-bottom: 5px;
-              font-family: Commissioner;
+              font-family: 'Commissioner', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 13px;
@@ -161,7 +169,7 @@
 
           &-email {
             & .email {
-              font-family: Commissioner;
+              font-family: 'Commissioner', sans-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 13px;
@@ -187,7 +195,7 @@
 
               & .title {
                 margin-bottom: 10px;
-                font-family: Commissioner;
+                font-family: 'Commissioner', sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
@@ -199,7 +207,7 @@
 
               & .name {
                 margin-bottom: 5px;
-                font-family: Commissioner;
+                font-family: 'Commissioner', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 13px;
@@ -210,7 +218,7 @@
 
               & .detail {
                 margin-bottom: 5px;
-                font-family: Lato;
+                font-family: 'Lato', sans-serif;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 13px;
@@ -220,7 +228,7 @@
 
               & .email {
                 margin-bottom: 0;
-                font-family: Lato;
+                font-family: 'Lato', sans-serif;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 13px;
@@ -240,7 +248,7 @@
         margin-bottom: 29px;
         padding-top: 28px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        font-family: Lato;
+        font-family: 'Lato', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -257,7 +265,7 @@
 
         & .subtitle {
           margin-bottom: 5px;
-          font-family: Commissioner;
+          font-family: 'Commissioner', sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 13px;
@@ -268,7 +276,7 @@
 
         & .detail {
           margin-bottom: 0;
-          font-family: Commissioner;
+          font-family: 'Commissioner', sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 13px;
@@ -290,7 +298,7 @@
     max-width: 1170px;
     width: 1170px;
     margin: 0 auto;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
