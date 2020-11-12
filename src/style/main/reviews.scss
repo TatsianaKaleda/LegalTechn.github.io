@@ -4,12 +4,13 @@
   background: white;
 
   &-container {
+    position: relative;
     margin: 0 auto;
     max-width: 1170px;
     width: 100%;
 
     & h2 {
-      margin-bottom: 35px;
+      margin-bottom: 15px;
       font-family: Commissioner;
       font-style: normal;
       font-weight: normal;
@@ -26,18 +27,51 @@
         display: flex;
         justify-content: space-between;
 
-        & .multiple-items-card {
-          //padding-right: 30px;
+        & .slick-list {
+          margin: 0 -15px;
+
+          & .slick-track {
+            margin: 20px 0 30px;
+          }
+        }
+
+        & .slick-dots li:not(.slick-active) {
+          & button:before {
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        & .slick-dots li {
+          & button:before {
+            height: 10px;
+            width: 10px;
+            border-radius: 10px;
+            font-size: 0;
+          }
+
+          &.slick-active {
+            & button:before {
+              background: #DEC377;
+            }
+          }
+        }
+
+        &-card {
           background: #FFFFFF;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 
           &:last-child {
             margin-right: 0;
           }
+
+          &.slick-slide {
+            margin: 0 15px;
+          }
         }
 
         &-card-text {
-          margin: 40px 50px 65px;
+          position: relative;
+          padding: 40px 50px 110px;
 
           & h4 {
             font-family: Lato;
@@ -71,6 +105,9 @@
           }
 
           & button {
+            position: absolute;
+            bottom: 65px;
+            background: none;
             font-family: Lato;
             font-style: normal;
             font-weight: 600;
@@ -81,6 +118,32 @@
             color: rgba(0, 0, 0, 0.5);
             border: none;
           }
+        }
+      }
+
+      &-all {
+        margin-top: -30px;
+      }
+
+      &-controls {
+        & .prev,
+        & .next {
+          position: absolute;
+          cursor: pointer;
+          bottom: 15px;
+          width: 60px;
+          height: 60px;
+        }
+
+        & .prev {
+          right: 60px;
+          background-image: url("../img/next.png") center no-repeat;
+          transform: rotate(180deg);
+        }
+
+        & .next {
+          right: 0;
+          background: url("../img/next.svg") center no-repeat;
         }
       }
     }
