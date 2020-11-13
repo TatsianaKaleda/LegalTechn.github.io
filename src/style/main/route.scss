@@ -172,7 +172,7 @@
         right: -100px;
 
         &-icon {
-          background: url("img/chevron-right.png") center no-repeat;
+          background: url("./img/chevron-right.png") center no-repeat;
         }
 
         @media screen and (max-width: 1300px) {
@@ -184,7 +184,7 @@
         left: -100px;
 
         &-icon {
-          background: url("img/chevron-left.png") center no-repeat;
+          background: url("./img/chevron-left.png") center no-repeat;
         }
 
         @media screen and (max-width: 1300px) {
