@@ -109,7 +109,7 @@
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 
           @media screen and (max-width: 780px) {
-            max-height: 115px;
+            max-height: initial;
           }
 
           @media screen and (max-width: 428px) {

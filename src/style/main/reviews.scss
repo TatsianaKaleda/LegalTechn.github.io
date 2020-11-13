@@ -3,6 +3,11 @@
   padding-top: 210px;
   background: white;
 
+  @media screen and (max-width: 768px) {
+    padding-top: 150px;
+    margin-bottom: 50px;
+  }
+
   &-container {
     position: relative;
     margin: 0 auto;
@@ -22,7 +27,11 @@
       font-size: 28px;
       line-height: 40px;
       letter-spacing: 0.03em;
-      color: rgba(0, 0, 0, 0.9)
+      color: rgba(0, 0, 0, 0.9);
+
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
     }
 
     &-slider {
@@ -40,9 +49,15 @@
           }
         }
 
-        & .slick-dots li:not(.slick-active) {
-          & button:before {
-            background: rgba(0, 0, 0, 0.1);
+        & .slick-dots {
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+
+          & li:not(.slick-active) {
+            & button:before {
+              background: rgba(0, 0, 0, 0.1);
+            }
           }
         }
 

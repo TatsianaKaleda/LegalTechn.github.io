@@ -2,6 +2,10 @@
   background: #E5E5E5;
   padding-bottom: 145px;
 
+  @media screen and (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+
   &-container {
     max-width: 1170px;
     width: 100%;
@@ -21,6 +25,10 @@
       line-height: 40px;
       letter-spacing: 0.03em;
       color: rgba(0, 0, 0, 0.9);
+
+      @media screen and (max-width: 768px) {
+        padding: 50px 0 15px;
+      }
     }
 
     &-cards {
@@ -43,13 +51,17 @@
         flex: 0 0 calc(25% - 23px);
         width: calc(25% - 23px);
         background: #FFFFFF;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         border-radius: 5px;
 
         @media screen and (max-width: 1110px) {
           flex: 0 0 calc(50% - 23px);
           width: calc(50% - 23px);
           margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
         }
 
         @media screen and (max-width: 550px) {

@@ -2,6 +2,10 @@
   background: #E5E5E5;
   padding-bottom: 60px;
 
+  @media screen and (max-width: 768px) {
+    padding-bottom: 10px;
+  }
+
   &-container {
     max-width: 1170px;
     width: 1170px;
@@ -24,6 +28,11 @@
         flex: 0 0 50%;
       }
 
+      @media screen and (max-width: 768px) {
+        flex: 0 0 100%;
+        margin: 0;
+      }
+
       &-title {
         margin-bottom: 70px;
         font-family: 'Commissioner', sans-serif;
@@ -32,16 +41,25 @@
         font-size: 20px;
         line-height: 30px;
         color: rgba(0, 0, 0, 0.9);
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+        }
       }
 
       &-about {
-
         &-unp {
           margin-bottom: 10px;
         }
 
         &-unp,
         &-rating {
+          margin-bottom: 61px;
+
+          @media screen and (max-width: 768px) {
+            margin-bottom: 15px;
+          }
+
           & .name {
             display: inline-block;
             margin-right: 15px;
@@ -64,14 +82,14 @@
             color: rgba(0, 0, 0, 0.5);
           }
         }
-
-        &-rating {
-          margin-bottom: 61px;
-        }
       }
 
       &-network {
         margin-bottom: 52px;
+
+        @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+        }
 
         & img {
           margin-right: 19px;
@@ -81,10 +99,8 @@
       }
 
       &-website {
-
         &-map,
         &-politic {
-
           & .name {
             display: inline-block;
             margin-bottom: 0;
@@ -131,6 +147,10 @@
         padding-top: 29px;
         display: flex;
 
+        @media screen and (max-width: 768px) {
+          padding-top: 15px;
+        }
+
         @media screen and (max-width: 620px) {
           flex-wrap: wrap;
         }
@@ -145,6 +165,7 @@
 
           @media screen and (max-width: 620px) {
             flex: 0 0 100%;
+            padding: 0;
           }
 
           &-title {
@@ -157,6 +178,10 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: rgba(0, 0, 0, 0.75);
+
+            @media screen and (max-width: 768px) {
+              margin-bottom: 15px;
+            }
           }
 
           &-telephone,
@@ -177,7 +202,6 @@
 
           &-address,
           &-communication {
-
             & .subtitle {
               margin-bottom: 5px;
               font-family: 'Commissioner', sans-serif;
@@ -191,7 +215,6 @@
           }
 
           &-email {
-
             & .email {
               font-family: 'Commissioner', sans-serif;
               font-style: normal;
@@ -204,9 +227,9 @@
         }
 
         &-department {
-
           @media screen and (max-width: 620px) {
             flex: 0 0 100%;
+            padding: 0;
           }
 
           &-point {
@@ -221,6 +244,10 @@
             &-city {
               flex: 0 0 50%;
               margin-bottom: 35px;
+
+              @media screen and (max-width: 768px) {
+                flex: 0 0 100% !important;
+              }
 
               & .title {
                 margin-bottom: 10px;
@@ -277,6 +304,10 @@
         flex: 0 0 50%;
       }
 
+      @media screen and (max-width: 768px) {
+        flex: 0 0 100%;
+      }
+
       &-title {
         margin-bottom: 29px;
         padding-top: 28px;
@@ -289,6 +320,12 @@
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        @media screen and (max-width: 768px) {
+          flex: 0 0 100% !important;
+          margin-bottom: 15px;
+          padding: 0;
+        }
       }
 
       &-visitors,
