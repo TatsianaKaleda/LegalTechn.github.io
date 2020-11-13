@@ -57,10 +57,22 @@
       line-height: 40px;
       letter-spacing: 0.03em;
       color: rgba(0, 0, 0, 0.9);
+
+      @media screen and (max-width: 920px) {
+        margin: 25px 25px 25px 25px;
+      }
     }
 
     &-text {
       margin: 0 130px 60px 70px;
+
+      @media screen and (max-width: 1120px) {
+        margin: 0 95px 45px 45px;
+      }
+
+      @media screen and (max-width: 920px) {
+        margin: 0 25px 25px 25px;
+      }
 
       & p {
         font-family: 'Lato', sans-serif;

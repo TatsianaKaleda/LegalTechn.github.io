@@ -5,6 +5,11 @@
   width: 100%;
   margin: 0 auto 33px;
 
+  @media screen and (max-width: 500px) {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
   & .language {
     & .name {
       display: inline-block;
@@ -37,34 +42,54 @@
   & .icon-eyes img {
     width: 32px;
     height: 32px;
+
+    @media screen and (max-width: 680px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 
   & .telephone {
-    & p {
+    display: flex;
+
+    @media screen and (max-width: 680px) {
+      flex-wrap: wrap;
       display: inline-block;
-      margin-right: 15px;
-      font-family: 'Commissioner', sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 20px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.5);
-
-      &.main-phone {
-        font-size: 14px;
-      }
-
-      &.second-phone {
-        font-size: 12px;
-      }
     }
 
-    & img {
-      margin-right: 12px;
+    &-a1 {
+      margin-right: 14px;
+    }
+
+    &-a1,
+    &-mts {
+      & p {
+        display: inline-block;
+        margin-right: 15px;
+        font-family: 'Commissioner', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+
+        &.main-phone {
+          font-size: 14px;
+        }
+
+        &.second-phone {
+          font-size: 12px;
+        }
+      }
+
+      & img {
+        margin-right: 12px;
+      }
     }
   }
+
 }
 
 .navigation {
@@ -73,6 +98,15 @@
   margin: 0 auto 22px;
   max-width: 1170px;
   width: 100%;
+
+  @media screen and (max-width: 400px) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  & .nav-mobile {
+    display: none;
+  }
 
   & .nav a {
     margin-right: 50px;
@@ -90,4 +124,28 @@
       margin-right: 0;
     }
   }
+
+  @media screen and (max-width: 1080px) {
+  & .nav {
+    display: none;
+  }
+
+  & .nav-mobile {
+    display: flex;
+    padding-top: 0;
+
+    & .navbar-toggler {
+      & svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    & .navbar-collapse {
+      a {
+        color: rgba(0,0,0,.5);
+      }
+    }
+  }
+}
 }

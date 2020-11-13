@@ -2,8 +2,8 @@
 @import "/node_modules/slick-carousel/slick/slick.css";
 @import "/node_modules/slick-carousel/slick/slick-theme.css";
 @import "./header/header.scss";
-@import "./main/promo.scss";
-@import "./main/info.scss";
+//@import "./main/promo.scss";
+//@import "./main/info.scss";
 @import "./main/route.scss";
 @import "./main/reviews.scss";
 @import "./main/partners.scss";
@@ -11,13 +11,25 @@
 @import "./main/service.scss";
 @import "./main/trust.scss";
 @import "./main/advantage.scss";
-@import "./main/cooperation.scss";
-@import "./main/cost.scss";
+//@import "./main/cooperation.scss";
+//@import "./main/cost.scss";
 @import "./footer/footer.scss";
 @import "/node_modules/reset-css/reset.css";
 
 body {
   overflow-x: hidden;
+}
+
+header {
+  @media screen and (max-width: 1200px) {
+      padding-right: 25px;
+      padding-left: 25px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .btn {

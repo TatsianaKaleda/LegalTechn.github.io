@@ -6,12 +6,25 @@
     width: 100%;
     margin: 0 auto;
 
+    @media screen and (max-width: 1200px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
     &-about {
       display: flex;
       justify-content: space-between;
       margin-bottom: 40px;
       max-width: 970px;
       width: 100%;
+
+      @media screen and (max-width: 1200px) {
+        padding-left: 10px;
+      }
+
+      @media screen and (max-width: 800px) {
+        display: block;
+      }
 
       & p {
         flex: 0 0 calc(100% - 300px);
@@ -22,6 +35,12 @@
         font-size: 15px;
         line-height: 25px;
         color: rgba(0, 0, 0, 0.8);
+
+        @media screen and (max-width: 800px) {
+          margin-right: 10px;
+          width: 100%;
+        }
+
       }
 
       & button {
@@ -46,11 +65,25 @@
     &-icon {
       mix-blend-mode: luminosity;
 
+      @media screen and (max-width: 1200px) {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
       & img {
         margin-right: 60px;
 
         &:last-child {
           margin-right: 0;
+        }
+
+        @media screen and (max-width: 1200px) {
+          margin-top: 15px;
+        }
+
+        @media screen and (max-width: 400px) {
+          margin-right: 5px;
         }
       }
     }

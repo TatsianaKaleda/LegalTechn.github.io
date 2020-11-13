@@ -9,6 +9,11 @@
     max-width: 1170px;
     width: 100%;
 
+    @media screen and (max-width: 1200px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
     & h2 {
       margin-bottom: 15px;
       font-family: 'Commissioner', sans-serif;
@@ -64,6 +69,10 @@
             margin-right: 0;
           }
 
+          & .test img {
+            width: 100%;
+          }
+
           &.slick-slide {
             margin: 0 15px;
           }
@@ -72,6 +81,10 @@
         &-card-text {
           position: relative;
           padding: 40px 50px 110px;
+
+          @media screen and (max-width: 700px) {
+            margin: 30px 25px 45px;
+          }
 
           & h4 {
             font-family: 'Lato', sans-serif;

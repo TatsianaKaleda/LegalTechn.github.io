@@ -2,10 +2,19 @@
   background: #E5E5E5;
   padding: 50px 0 50px;
 
+  &-img {
+    width: 100%;
+  }
+
   &-container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
 
     & h2 {
       margin-top: 60px;
@@ -25,6 +34,10 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: 780px) {
+          display: block;
+        }
+
         &:nth-child(4n + 1) {
           & .card {
             background: rgba(222, 195, 119, 0.4);
@@ -33,11 +46,19 @@
           & .service-card-left {
             flex: 0 0 calc(40% - 15px);
             width: calc(40% - 15px);
+
+            @media screen and (max-width: 780px) {
+              width: 100%;
+            }
           }
 
           & .service-card-right {
             flex: 0 0 calc(60% - 15px);
             width: calc(60% - 15px);
+
+            @media screen and (max-width: 780px) {
+              width: 100%;
+            }
           }
         }
 
@@ -50,6 +71,10 @@
           & .service-card-right {
             flex: 0 0 calc(50% - 15px);
             width: calc(50% - 15px);
+
+            @media screen and (max-width: 780px) {
+              width: 100%;
+            }
           }
         }
 
@@ -61,11 +86,19 @@
           & .service-card-left {
             flex: 0 0 calc(60% - 15px);
             width: calc(60% - 15px);
+
+            @media screen and (max-width: 780px) {
+              width: 100%;
+            }
           }
 
           & .service-card-right {
             flex: 0 0 calc(40% - 15px);
             width: calc(40% - 15px);
+
+            @media screen and (max-width: 780px) {
+              width: 100%;
+            }
           }
         }
 
@@ -74,6 +107,14 @@
           max-height: 140px;
           height: 140px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+          @media screen and (max-width: 780px) {
+            max-height: 115px;
+          }
+
+          @media screen and (max-width: 428px) {
+            max-height: 140px;
+          }
 
           & .service-card-text {
             display: flex;
@@ -123,6 +164,10 @@
       display: flex;
       justify-content: space-between;
 
+      @media screen and (max-width: 950px) {
+        display: block;
+      }
+
       & p {
         margin-right: 25px;
         max-width: 770px;
@@ -133,6 +178,10 @@
         font-size: 15px;
         line-height: 25px;
         color: rgba(0, 0, 0, 0.8);
+
+        @media screen and (max-width: 950px) {
+          max-width: 950px;
+        }
       }
     }
   }

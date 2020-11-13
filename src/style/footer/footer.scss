@@ -9,6 +9,11 @@
     padding-top: 49px;
     display: flex;
 
+    @media screen and (max-width: 1200px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
     &-info {
       margin-right: 30px;
       width: calc(31% - 30px);
