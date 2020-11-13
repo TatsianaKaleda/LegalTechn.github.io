@@ -8,6 +8,11 @@
       bottom: 350px;
       left: calc((100vw - 1170px - 16px) / 2);
 
+      @media screen and (max-width: 1250px) {
+        top:50px;
+        bottom: 0;
+      }
+
       & .main-name {
         margin-bottom: 20px;
         font-family: 'Commissioner', sans-serif;
@@ -27,6 +32,10 @@
         font-size: 15px;
         line-height: 25px;
         color: rgba(0, 0, 0, 0.8);
+
+        @media screen and (max-width: 1250px) {
+          margin-bottom: 30px;
+        }
       }
     }
   }

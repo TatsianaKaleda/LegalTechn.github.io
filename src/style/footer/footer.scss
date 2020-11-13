@@ -12,11 +12,17 @@
     @media screen and (max-width: 1200px) {
       padding-right: 25px;
       padding-left: 25px;
+      width: 100%;
+      flex-wrap: wrap;
     }
 
     &-info {
       margin-right: 30px;
       width: calc(31% - 30px);
+
+      @media screen and (max-width: 1200px) {
+        flex: 0 0 50%;
+      }
 
       &-title {
         margin-bottom: 70px;
@@ -104,6 +110,10 @@
       margin-right: 30px;
       width: calc(54% - 30px);
 
+      @media screen and (max-width: 1200px) {
+        flex: 0 0 100%;
+      }
+
       &-title {
         padding-top: 26px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -121,6 +131,10 @@
         padding-top: 29px;
         display: flex;
 
+        @media screen and (max-width: 620px) {
+          flex-wrap: wrap;
+        }
+
         &-minsk,
         &-department {
           padding-right: 30px;
@@ -128,6 +142,10 @@
 
         &-minsk {
           flex: 0 0 calc(38% - 30px);
+
+          @media screen and (max-width: 620px) {
+            flex: 0 0 100%;
+          }
 
           &-title {
             margin-bottom: 20px;
@@ -173,6 +191,7 @@
           }
 
           &-email {
+
             & .email {
               font-family: 'Commissioner', sans-serif;
               font-style: normal;
@@ -185,6 +204,11 @@
         }
 
         &-department {
+
+          @media screen and (max-width: 620px) {
+            flex: 0 0 100%;
+          }
+
           &-point {
             display: flex;
             flex-wrap: wrap;
@@ -249,6 +273,10 @@
     &-time {
       width: 14%;
 
+      @media screen and (max-width: 1200px) {
+        flex: 0 0 50%;
+      }
+
       &-title {
         margin-bottom: 29px;
         padding-top: 28px;
@@ -299,17 +327,26 @@
   padding-top: 17px;
   padding-bottom: 18px;
 
-  &-text {
+  &-container {
     max-width: 1170px;
-    width: 1170px;
+    width: 100%;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: rgba(0, 0, 0, 0.8);
-    text-align: center;
+
+    @media screen and (max-width: 1200px) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    &-text {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+    }
   }
 }
