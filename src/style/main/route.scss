@@ -22,14 +22,12 @@
 
       & h2 {
         margin-bottom: 5px;
-        font-family: 'Commissioner', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 28px;
         line-height: 40px;
         letter-spacing: 0.03em;
         color: rgba(0, 0, 0, 0.9);
         text-align: left;
+        @include font-commissioner-regular;
       }
 
       & .route-cards {
@@ -77,12 +75,10 @@
           &-name {
             flex: 0 0 100%;
             margin: 10px 0 0;
-            font-family: 'Commissioner', sans-serif;
-            font-style: normal;
-            font-weight: normal;
             font-size: 20px;
             line-height: 30px;
-            color: rgba(0, 0, 0, 0.9)
+            color: rgba(0, 0, 0, 0.9);
+            @include font-commissioner-regular;
           }
 
           & .route-card-img-border {
@@ -100,9 +96,6 @@
           &-btn {
             align-self: flex-end;
             padding: 0;
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 600;
             font-size: 12px;
             line-height: 20px;
             letter-spacing: 0.02em;
@@ -110,6 +103,7 @@
             color: rgba(0, 0, 0, 0.5);
             border: none;
             background: none;
+            @include font-lato-bold;
           }
         }
       }
@@ -131,13 +125,11 @@
       & h2 {
         flex: 0 0 40%;
         padding-right: 30px;
-        font-family: 'Commissioner', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 28px;
         line-height: 40px;
         letter-spacing: 0.03em;
         color: rgba(0, 0, 0, 0.9);
+        @include font-commissioner-regular;
 
         @media screen and (max-width: 1200px) {
           margin-bottom: 20px;
@@ -146,12 +138,10 @@
 
       &-text {
         flex: 0 0 60%;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 300;
         font-size: 15px;
         line-height: 25px;
         color: rgba(0, 0, 0, 0.8);
+        @include font-lato-light;
 
         @media screen and (max-width: 768px) {
           text-align: justify;

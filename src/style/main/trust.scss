@@ -51,13 +51,11 @@
 
         &-name {
           margin-bottom: 30px;
-          font-family: 'Commissioner', sans-serif;
-          font-style: normal;
-          font-weight: normal;
           font-size: 28px;
           line-height: 40px;
           letter-spacing: 0.03em;
           color: rgba(0, 0, 0, 0.9);
+          @include font-commissioner-regular;
 
           @media screen and (max-width: 768px) {
             margin-bottom: 15px;
@@ -65,12 +63,10 @@
         }
 
         &-description {
-          font-family: 'Lato', sans-serif;
-          font-style: normal;
-          font-weight: 300;
           font-size: 15px;
           line-height: 25px;
           color: rgba(0, 0, 0, 0.8);
+          @include font-lato-light;
         }
       }
 

@@ -33,12 +33,10 @@
       & p {
         flex: 0 0 calc(100% - 300px);
         margin-right: 100px;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 300;
         font-size: 15px;
         line-height: 25px;
         color: rgba(0, 0, 0, 0.8);
+        @include font-lato-light;
 
         @media screen and (max-width: 800px) {
           margin-right: 10px;
@@ -51,9 +49,6 @@
         flex: 0 0 200px;
         width: 200px;
         height: 45px;
-        font-family: 'Commissioner', sans-serif;
-        font-style: normal;
-        font-weight: bold;
         font-size: 13px;
         line-height: 30px;
         align-items: center;
@@ -63,6 +58,7 @@
         color: #DEC377;
         border: 1px solid #DEC377;
         background: #ffffff;
+        @include font-commissioner-bold;
       }
     }
 

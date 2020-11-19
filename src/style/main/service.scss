@@ -18,13 +18,11 @@
 
     & h2 {
       margin-top: 60px;
-      font-family: 'Commissioner', sans-serif;
-      font-style: normal;
-      font-weight: normal;
       font-size: 28px;
       line-height: 40px;
       letter-spacing: 0.03em;
       color: rgba(0, 0, 0, 0.9);
+      @include font-commissioner-regular;
     }
 
     &-cards {
@@ -128,21 +126,16 @@
               flex: 0 0 100%;
               align-self: self-start;
               margin: 0;
-              font-family: 'Commissioner', sans-serif;
-              font-style: normal;
-              font-weight: normal;
               font-size: 20px;
               line-height: 30px;
               color: rgba(0, 0, 0, 0.9);
+              @include font-commissioner-regular;
             }
 
             &-btn {
               text-align: right;
               flex: auto;
               align-self: flex-end;
-              font-family: 'Lato', sans-serif;
-              font-style: normal;
-              font-weight: 600;
               font-size: 12px;
               line-height: 20px;
               letter-spacing: 0.02em;
@@ -150,6 +143,7 @@
               color: rgba(0, 0, 0, 0.5);
               background: white;
               border: none;
+              @include font-lato-bold;
             }
           }
         }
@@ -172,12 +166,10 @@
         margin-right: 25px;
         max-width: 770px;
         width: 100%;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 300;
         font-size: 15px;
         line-height: 25px;
         color: rgba(0, 0, 0, 0.8);
+        @include font-lato-light;
 
         @media screen and (max-width: 950px) {
           max-width: 950px;

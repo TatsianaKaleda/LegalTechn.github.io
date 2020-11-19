@@ -14,25 +14,25 @@ const rename = require("gulp-rename");
 const imageMin = require('gulp-imagemin');
 const rigger = require('gulp-rigger');
 const minify = require('gulp-minify');
-const concat = require('gulp-concat');;
+const concat = require('gulp-concat');
 const reload = browserSync.reload;
 
 const path = {
-    build: { //Тут мы укажем куда складывать готовые после сборки файлы
+    src: {
+        html: 'src/*.html',
+        js: 'src/js/main.js',
+        css: 'src/style/main.scss',
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*'
+    },
+    build: {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
-    src: { //Пути откуда брать исходники
-        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
-        js: 'src/js/main.js', //В стилях и скриптах нам понадобятся только main файлы
-        css: 'src/style/main.scss',
-        img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-        fonts: 'src/fonts/**/*.*'
-    },
-    watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
+    watch: {
         html: 'src/**/*.html',
         js: 'src/js/*.js',
         css: 'src/style/**/*.scss',
@@ -81,7 +81,7 @@ const css = () => {
             console.log(`${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`)
         }))
         .pipe(sourcemaps.write())
-        .pipe(rename({ suffix: '.min' }))
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}))
 };
@@ -117,7 +117,7 @@ const font = () => {
 
 gulp.task('build', gulp.series(gulp.parallel(html, css, img, font), js));
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.css, css);
     gulp.watch(path.watch.js, js);

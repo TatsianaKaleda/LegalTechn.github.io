@@ -1,3 +1,4 @@
+@import "./fonts.scss";
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "/node_modules/slick-carousel/slick/slick.css";
 @import "/node_modules/slick-carousel/slick/slick-theme.css";
@@ -35,9 +36,6 @@ header {
 .btn {
   width: 200px;
   height: 45px;
-  font-family: 'Commissioner', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 13px;
   line-height: 30px;
   align-items: center;
@@ -48,4 +46,5 @@ header {
   background: #DEC377;
   border: none;
   border-radius: 2px;
+  @include font-commissioner-bold;
 }

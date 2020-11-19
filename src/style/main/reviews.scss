@@ -21,13 +21,11 @@
 
     & h2 {
       margin-bottom: 15px;
-      font-family: 'Commissioner', sans-serif;
-      font-style: normal;
-      font-weight: normal;
       font-size: 28px;
       line-height: 40px;
       letter-spacing: 0.03em;
       color: rgba(0, 0, 0, 0.9);
+      @include font-commissioner-regular;
 
       @media screen and (max-width: 768px) {
         margin: 0;
@@ -102,49 +100,41 @@
           }
 
           & h4 {
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: normal;
             font-size: 15px;
             line-height: 25px;
             color: rgba(0, 0, 0, 0.5);
+            @include font-lato-regular;
           }
 
           & h3 {
             margin-bottom: 20px;
-            font-family: 'Commissioner', sans-serif;
-            font-style: normal;
-            font-weight: bold;
             font-size: 26px;
             line-height: 40px;
             letter-spacing: 0.01em;
             color: #DEC377;
+            @include font-commissioner-bold;
           }
 
           & p {
             margin-bottom: 25px;
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 300;
             font-size: 14px;
             line-height: 25px;
             letter-spacing: 0.01em;
             color: rgba(0, 0, 0, 0.8);
+            @include font-lato-light;
           }
 
           & button {
             position: absolute;
             bottom: 65px;
             background: none;
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 600;
             font-size: 12px;
             line-height: 20px;
             letter-spacing: 0.02em;
             text-transform: uppercase;
             color: rgba(0, 0, 0, 0.5);
             border: none;
+            @include font-lato-bold;
           }
         }
       }

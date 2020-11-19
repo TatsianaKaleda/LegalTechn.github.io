@@ -14,23 +14,19 @@
     & .name {
       display: inline-block;
       margin-right: 13px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-style: normal;
-      font-weight: 300;
       font-size: 16px;
       line-height: 20px;
       color: rgba(0, 0, 0, 0.8);
+      @include font-sans-pro-light;
     }
 
     & .select {
       display: inline-block;
       margin-right: 8px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-style: normal;
-      font-weight: normal;
       font-size: 16px;
       line-height: 20px;
       color: rgba(0, 0, 0, 0.8);
+      @include font-sans-pro-regular;
     }
 
     & img {
@@ -66,14 +62,12 @@
       & p {
         display: inline-block;
         margin-right: 15px;
-        font-family: 'Commissioner', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         line-height: 20px;
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
+        @include font-commissioner-regular;
 
         &.main-phone {
           font-size: 14px;
@@ -111,14 +105,12 @@
   & .nav a {
     margin-right: 50px;
     padding: 0;
-    font-family: 'Commissioner', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.75);
+    @include font-commissioner-medium;
 
     &:last-child {
       margin-right: 0;

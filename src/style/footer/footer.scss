@@ -35,12 +35,10 @@
 
       &-title {
         margin-bottom: 70px;
-        font-family: 'Commissioner', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 20px;
         line-height: 30px;
         color: rgba(0, 0, 0, 0.9);
+        @include font-commissioner-regular;
 
         @media screen and (max-width: 768px) {
           margin-bottom: 15px;
@@ -64,22 +62,18 @@
             display: inline-block;
             margin-right: 15px;
             margin-bottom: 0;
-            font-family: 'Commissioner', sans-serif;
-            font-style: normal;
-            font-weight: 500;
             font-size: 13px;
             line-height: 20px;
             letter-spacing: 0.01em;
             color: rgba(0, 0, 0, 0.5);
+            @include font-commissioner-medium;
           }
 
           & .description {
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 300;
             font-size: 13px;
             line-height: 20px;
             color: rgba(0, 0, 0, 0.5);
+            @include font-lato-light;
           }
         }
       }
@@ -105,14 +99,12 @@
             display: inline-block;
             margin-bottom: 0;
             margin-right: 15px;
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 600;
             font-size: 12px;
             line-height: 20px;
             letter-spacing: 0.02em;
             text-transform: uppercase;
             color: rgba(0, 0, 0, 0.75);
+            @include font-lato-bold;
           }
 
           & .arrow {
@@ -133,14 +125,12 @@
       &-title {
         padding-top: 26px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 15px;
         line-height: 25px;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
         opacity: 0.7;
+        @include font-lato-regular;
       }
 
       &-contact {
@@ -170,14 +160,12 @@
 
           &-title {
             margin-bottom: 20px;
-            font-family: 'Commissioner', sans-serif;
-            font-style: normal;
-            font-weight: normal;
             font-size: 14px;
             line-height: 25px;
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: rgba(0, 0, 0, 0.75);
+            @include font-commissioner-regular;
 
             @media screen and (max-width: 768px) {
               margin-bottom: 15px;
@@ -191,12 +179,10 @@
 
             & .detail {
               margin-bottom: 0;
-              font-family: 'Lato', sans-serif;
-              font-style: normal;
-              font-weight: 300;
               font-size: 13px;
               line-height: 20px;
               color: rgba(0, 0, 0, 0.8);
+              @include font-lato-light;
             }
           }
 
@@ -204,24 +190,20 @@
           &-communication {
             & .subtitle {
               margin-bottom: 5px;
-              font-family: 'Commissioner', sans-serif;
-              font-style: normal;
-              font-weight: 500;
               font-size: 13px;
               line-height: 20px;
               letter-spacing: 0.01em;
               color: rgba(0, 0, 0, 0.75);
+              @include font-commissioner-medium;
             }
           }
 
           &-email {
             & .email {
-              font-family: 'Commissioner', sans-serif;
-              font-style: normal;
-              font-weight: bold;
               font-size: 13px;
               line-height: 20px;
               color: rgba(0, 0, 0, 0.8);
+              @include font-commissioner-bold;
             }
           }
         }
@@ -251,45 +233,37 @@
 
               & .title {
                 margin-bottom: 10px;
-                font-family: 'Commissioner', sans-serif;
-                font-style: normal;
-                font-weight: normal;
                 font-size: 14px;
                 line-height: 25px;
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
                 color: rgba(0, 0, 0, 0.75);
+                @include font-commissioner-regular;
               }
 
               & .name {
                 margin-bottom: 5px;
-                font-family: 'Commissioner', sans-serif;
-                font-style: normal;
-                font-weight: 500;
                 font-size: 13px;
                 line-height: 20px;
                 letter-spacing: 0.01em;
                 color: rgba(0, 0, 0, 0.75);
+                @include font-commissioner-medium;
               }
 
               & .detail {
                 margin-bottom: 5px;
-                font-family: 'Lato', sans-serif;
-                font-style: normal;
-                font-weight: 300;
                 font-size: 13px;
                 line-height: 20px;
                 color: rgba(0, 0, 0, 0.8);
+                @include font-lato-light;
               }
 
               & .email {
                 margin-bottom: 0;
-                font-family: 'Lato', sans-serif;
-                font-style: normal;
-                font-weight: bold;
                 font-size: 13px;
                 line-height: 20px;
                 color: rgba(0, 0, 0, 0.8);
+                @include font-lato-bold;
               }
             }
           }
@@ -312,14 +286,12 @@
         margin-bottom: 29px;
         padding-top: 28px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 15px;
         line-height: 25px;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.5);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        @include font-lato-regular;
 
         @media screen and (max-width: 768px) {
           flex: 0 0 100% !important;
@@ -335,24 +307,20 @@
 
         & .subtitle {
           margin-bottom: 5px;
-          font-family: 'Commissioner', sans-serif;
-          font-style: normal;
-          font-weight: 500;
           font-size: 13px;
           line-height: 20px;
           letter-spacing: 0.01em;
           color: rgba(0, 0, 0, 0.75);
+          @include font-commissioner-medium;
         }
 
         & .detail {
           margin-bottom: 0;
-          font-family: 'Commissioner', sans-serif;
-          font-style: normal;
-          font-weight: 500;
           font-size: 13px;
           line-height: 20px;
           letter-spacing: 0.01em;
           color: rgba(0, 0, 0, 0.75);
+          @include font-commissioner-medium;
         }
       }
     }
@@ -376,14 +344,12 @@
 
     &-text {
       margin: 0;
-      font-family: 'Lato', sans-serif;
-      font-style: normal;
-      font-weight: 300;
       font-size: 12px;
       line-height: 20px;
       letter-spacing: 0.02em;
       color: rgba(0, 0, 0, 0.8);
       text-align: center;
+      @include font-lato-light;
     }
   }
 }

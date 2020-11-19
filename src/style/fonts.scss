@@ -1,0 +1,78 @@
+// Font vars
+$latoLight: latoLight, arial;
+$latoRegular: latoRegular, arial;
+$latoBold: latoBold, arial;
+$commissionerRegular: commissionerRegular, arial;
+$commissionerMedium: commissionerMedium, arial;
+$commissionerBold: commissionerBold, arial;
+$sansProLight: sansProLight, arial;
+$sansProRegular: sansProRegular, arial;
+
+@mixin font-face-mix($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url($file-path + ".eot?#iefix") format('embedded-opentype'),
+    url($file-path + ".woff") format('woff'),
+    url($file-path + ".otf") format('opentype'),
+    url($file-path + ".ttf") format('truetype');
+  }
+}
+
+@include font-face-mix("latoLight", '../fonts/Lato/Lato-Light', 300);
+@include font-face-mix("latoRegular", '../fonts/Lato/Lato-Regular', 400);
+@include font-face-mix("latoBold", '../fonts/Lato/Lato-Bold', 700);
+@include font-face-mix("commissionerRegular", '../fonts/Сommissioner/Сommissioner-Regular', 400);
+@include font-face-mix("commissionerMedium", '../fonts/Сommissioner/Сommissioner-Medium', 500);
+@include font-face-mix("commissionerBold", '../fonts/Сommissioner/Сommissioner-Bold', 700);
+@include font-face-mix("sansProLight", '../fonts/Sans-Pro/SourceSansPro-Light', 300);
+@include font-face-mix("sansProRegular", '../fonts/Sans-Pro/SourceSansPro-Regular', 400);
+
+@mixin font-lato-light {
+  font-family: $latoLight;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-lato-regular {
+  font-family: $latoRegular;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-lato-bold {
+  font-family: $latoBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-commissioner-regular {
+  font-family: $commissionerRegular;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-commissioner-medium {
+  font-family: $commissionerMedium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin font-commissioner-bold {
+  font-family: $commissionerBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-sans-pro-light {
+  font-family: $sansProLight;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-sans-pro-regular {
+  font-family: $sansProRegular;
+  font-weight: 400;
+  font-style: normal;
+}

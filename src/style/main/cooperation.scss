@@ -42,13 +42,11 @@
 
         &-name {
           margin-bottom: 35px;
-          font-family: 'Commissioner', sans-serif;
-          font-style: normal;
-          font-weight: normal;
           font-size: 28px;
           line-height: 40px;
           letter-spacing: 0.03em;
           color: rgba(0, 0, 0, 0.9);
+          @include font-commissioner-regular;
         }
 
         &-number {
@@ -62,26 +60,22 @@
           }
 
           &-text {
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: normal;
             font-size: 15px;
             line-height: 25px;
             align-items: center;
             color: rgba(0, 0, 0, 0.8);
+            @include font-lato-regular;
           }
         }
 
         &-text {
           margin-top: 5px;
           margin-bottom: 0;
-          font-family: 'Lato', sans-serif;
-          font-style: normal;
-          font-weight: 300;
           font-size: 14px;
           line-height: 25px;
           letter-spacing: 0.01em;
           color: rgba(0, 0, 0, 0.8);
+          @include font-lato-light;
 
           @media screen and (max-width: 1160px) {
             margin-bottom: 30px;
@@ -111,40 +105,34 @@
 
           &-subname {
             margin-bottom: 10px;
-            font-family: 'Commissioner', sans-serif;
-            font-style: normal;
-            font-weight: 500;
             font-size: 13px;
             line-height: 20px;
             display: flex;
             align-items: center;
             letter-spacing: 0.01em;
             color: rgba(0, 0, 0, 0.5);
+            @include font-commissioner-medium;
           }
 
           &-field {
             margin: 0;
             padding-left: 10px;
             padding-bottom: 4px;
-            font-family: 'Lato', sans-serif;
-            font-style: normal;
-            font-weight: 300;
             font-size: 15px;
             line-height: 25px;
             align-items: center;
             color: rgba(0, 0, 0, 0.5);
             opacity: 0.6;
+            @include font-lato-light;
           }
         }
 
         &-info {
           margin-bottom: 30px;
-          font-family: 'Lato', sans-serif;
-          font-style: normal;
-          font-weight: 300;
           font-size: 13px;
           line-height: 20px;
           color: rgba(0, 0, 0, 0.5);
+          @include font-lato-light;
 
           & span {
             font-weight: bold;
@@ -158,9 +146,6 @@
           background: #DEC377;
           border: none;
           border-radius: 2px;
-          font-family: 'Commissioner', sans-serif;
-          font-style: normal;
-          font-weight: bold;
           font-size: 13px;
           line-height: 30px;
           align-items: center;
@@ -168,6 +153,7 @@
           letter-spacing: 0.08em;
           text-transform: uppercase;
           color: #FFFFFF;
+          @include font-commissioner-bold;
 
           @media screen and (max-width: 600px) {
             width: 100%;
